@@ -7,10 +7,11 @@ import javax.persistence.*;
 @Entity
 @Table(name = "memo")
 @ToString
+@Getter
+@Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
 public class Memo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
